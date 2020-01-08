@@ -1,0 +1,45 @@
+DECLARE @IDADE INT
+DECLARE @NOME VARCHAR(200)
+DECLARE @DATA DATE
+DECLARE @IDADE2 INT,  @NOME2 VARCHAR(200), @DATA2 DATE
+
+SET @IDADE = 20
+
+SET @NOME = 'JOÂO DA SILVA'
+SET @DATA = '20180517'
+
+PRINT(@IDADE)
+PRINT(@NOME)
+PRINT(@DATA)
+
+DECLARE @CPF VARCHAR(12)
+SET @CPF = '1471156710'
+
+select nome, [data de nascimento], idade 
+from [TABELA DE CLIENTES]
+where cpf = @CPF
+
+
+select @NOME2=nome,@DATA2=[data de nascimento], @IDADE2=idade 
+from [TABELA DE CLIENTES]
+where cpf = @CPF
+
+PRINT @NOME2
+PRINT @DATA2
+PRINT @IDADE2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
